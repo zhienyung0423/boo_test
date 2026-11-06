@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7efee">
+  <meta name="description" content="Boo! Candy — pick your favorite pastel treat.">
+  <title>Boo! Candy — Treat or tricks!!</title>
+  <link rel="preload" href="assets/BoldenVan.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-inner">
+        <img class="hero-wordmark" src="assets/Glossy Pastel 3D BOO! Typography.png" alt="Boo! in glossy pastel letters">
+        <div class="ghost-shadow" aria-hidden="true"></div>
+        <img class="ghost" src="assets/Cute Cow Unicorn Ghost Mascot.png" alt="A cute cow unicorn ghost">
+        <div class="hero-copy">
+          <h1 id="hero-title">Treat or tricks!!</h1>
+          <a class="view-more" href="#candy">View More<span class="chevron" aria-hidden="true"></span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="candy" id="candy" aria-labelledby="candy-title">
+      <div class="candy-inner">
+        <img class="candy-wordmark" src="assets/Glossy Pastel Candy Boo! Lettering.png" alt="Candy Boo!">
+        <div class="candy-options" role="group" aria-label="Choose a candy">
+          <button class="candy-option" type="button" aria-pressed="false" data-candy="Pink swirl candy" data-description="assets/candy-sweet-moments-pink-swirl.png">
+            <img src="assets/Ornate Candy Frame with Pink Heart Gems.png" alt="Pink and blue swirl candy in an ornate pink frame">
+          </button>
+          <button class="candy-option" type="button" aria-pressed="false" data-candy="Heart candy" data-description="assets/candy-sweet-moments-heart.png">
+            <img src="assets/Ornate Pink Candy Heart Plaque.png" alt="Pink heart candy in an ornate frame">
+          </button>
+          <button class="candy-option" type="button" aria-pressed="false" data-candy="Blue swirl candy" data-description="assets/candy-sweet-moments-blue-swirl.png">
+            <img src="assets/Ornate Rococo Candy Emblem.png" alt="Blue and cream swirl candy in an ornate gold frame">
+          </button>
+        </div>
+        <h2 id="candy-title">Select a candy!</h2>
+        <p class="selection" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="order" aria-label="Make your order">
+      <div class="order-inner">
+        <button class="order-button" type="button" aria-label="Click here to make your order">
+          <img src="assets/Make Your Order!.png" alt="Make Your Order!">
+          <span>CLICK HERE!</span>
+        </button>
+        <small>copyright @ boo! candy 2026</small>
+      </div>
+    </section>
+  </main>
+  <dialog class="candy-dialog" aria-label="Candy description">
+    <form method="dialog">
+      <button class="dialog-close" aria-label="Close candy description">×</button>
+      <img class="candy-description-image" alt="">
+    </form>
+  </dialog>
+  <dialog class="order-dialog" aria-labelledby="dialog-title">
+    <form method="dialog">
+      <button class="dialog-close" aria-label="Close">×</button>
+      <h2 id="dialog-title">A sweet choice!</h2>
+      <p class="dialog-message">Choose a candy above to get started.</p>
+      <button class="dialog-ok">Got it!</button>
+    </form>
+  </dialog>
+  <script src="script.js"></script>
+</body>
+</html>
